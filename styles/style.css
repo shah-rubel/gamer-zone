@@ -23,6 +23,27 @@ font-size: 1.02rem;
 font-weight: 500;
 
 }
+.pink-btn{
+
+color: #FFF;
+padding: 21px 40px;
+font-size: 1.2rem;
+border-radius: 48px;
+background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+font-weight: 600;
+
+border: none;
+}
+.blue-btn{
+    color: #FFF;
+padding: 21px 40px;
+font-size: 1.2rem;
+border-radius: 48px;
+font-weight: 600;
+background: #4EC5F7;
+border: none;
+margin-left: 24px;
+}
 .pink{
     background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
 background-clip: text;
@@ -86,11 +107,43 @@ padding: 17px 24px;
     color: #3C354F;
 }
 
+/* Banner section */
+.banner-section{
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background: linear-gradient(235deg, rgba(140, 87, 238, 0.03) 3.9%, rgba(241, 68, 174, 0.03) 100.56%);
+    
+}
+.banner-text{
+    padding: 148px 240px;
+    margin-right: 68px;
+   
+}
+.banner-text p{
+    margin-bottom: 17px;
+}
+.goat-text{
+   
+font-size: 6rem;
+
+font-weight: 800;
+
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-bottom: 24px;
+}
+.banner-text button{
+    margin-top: 41px;
+}
 
 /* Responsive screen  */
 
 @media screen and (max-width:576px) {
-    .navbar,.link-section,.navbar ul{
+   
+    .navbar,.link-section,.navbar ul,.banner-section{
         flex-direction: column;
     }
     .navbar{
@@ -99,7 +152,19 @@ padding: 17px 24px;
     .link-section>ul>li> a,.follow{
         margin: 10px 0;
     }
-    
+    .banner-section{
+
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .banner-text{
+        padding: 20px;
+        text-align: center;
+    }
+    .banner-img img{
+        width: 100%;
+    }
     
     
 }
@@ -120,6 +185,13 @@ padding: 17px 24px;
         margin-left: 10px;
         white-space: nowrap;
         
+    }
+    .banner-section{
+        flex-direction: column;
+    }
+    .banner-text{
+        text-align: center;
+        padding: 20px;
     }
    
 }
