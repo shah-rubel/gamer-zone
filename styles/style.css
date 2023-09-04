@@ -191,14 +191,36 @@ margin-bottom: 24px;
 .online-title{
     color: #3C354F;
 }
+
+
+/* Play section */
+.play-section{
+    padding: 0 240px;
+    display: flex;
+    justify-content: center;
+    
+}
+.play-text{
+    margin-right: 265px;
+    text-align: center;
+    padding: 150px 0;
+}
+.play-text h1{
+    margin-bottom: 24px;
+}
+.badge-img{
+    position: relative;
+    top: -200px;
+    left: -100px;
+}
 /* Responsive screen  */
 
 @media screen and (max-width:576px) {
    
-    .navbar,.link-section,.navbar ul,.banner-section,.gamer-section,.online-games{
+    .navbar,.link-section,.navbar ul,.banner-section,.gamer-section,.online-games,.play-section{
         flex-direction: column;
     }
-    .navbar,.gamer-section,.online-section{
+    .navbar,.gamer-section,.online-section,.play-section{
         padding: 20px;
     }
     .link-section>ul>li> a,.follow{
@@ -217,6 +239,17 @@ margin-bottom: 24px;
     .banner-img img, .gamer-img img{
         width: 100%;
     }
+    .play-img img{
+        width: 100%;
+    }
+    .badge-img img{
+
+        width: 50%;
+    }
+    .play-text{
+        margin: 20px;
+    }
+
     
     
 }
@@ -238,7 +271,7 @@ margin-bottom: 24px;
         white-space: nowrap;
         
     }
-    .banner-section,.gamer-section{
+    .banner-section,.gamer-section,.play-section{
         flex-direction: column;
     }
     .banner-text{
@@ -258,4 +291,14 @@ margin-bottom: 24px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
    }
+   .play-section{
+    margin-top:-130px;
+    align-items: center;
+    padding: 20px;
+   }
+   .play-text{
+    margin: 20px;
+   }
+   
+   
 }
