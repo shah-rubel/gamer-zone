@@ -31,11 +31,10 @@ font-size: 1.2rem;
 border-radius: 48px;
 background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
 font-weight: 600;
-
 border: none;
 }
 .blue-btn{
-    color: #FFF;
+color: #FFF;
 padding: 21px 40px;
 font-size: 1.2rem;
 border-radius: 48px;
@@ -123,30 +122,59 @@ padding: 17px 24px;
 .banner-text p{
     margin-bottom: 17px;
 }
+.purple-text{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .goat-text{
    
 font-size: 6rem;
 
 font-weight: 800;
 
-background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+
 margin-bottom: 24px;
 }
 .banner-text button{
     margin-top: 41px;
 }
 
+/* Gamer Section */
+.gamer-section{
+    display: flex;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+    justify-content: center;
+    padding: 55px 240px;
+    flex-direction: row-reverse ;
+}
+
+.gamer-text{
+    margin-left:56px;
+   
+}
+.gamer-text>button{
+    margin: 24px 0;
+}
+.gamer-text h3{
+    font-size: 2rem;
+}
+.gamer-text p{
+    font-size: 1.2rem;
+}
+.gamer-title{
+    font-size: 3rem;
+    margin-bottom: 24px;
+}
 /* Responsive screen  */
 
 @media screen and (max-width:576px) {
    
-    .navbar,.link-section,.navbar ul,.banner-section{
+    .navbar,.link-section,.navbar ul,.banner-section,.gamer-section{
         flex-direction: column;
     }
-    .navbar{
+    .navbar,.gamer-section{
         padding: 20px;
     }
     .link-section>ul>li> a,.follow{
@@ -162,7 +190,7 @@ margin-bottom: 24px;
         padding: 20px;
         text-align: center;
     }
-    .banner-img img{
+    .banner-img img, .gamer-img img{
         width: 100%;
     }
     
@@ -171,7 +199,7 @@ margin-bottom: 24px;
 
 /* tablet responsive */
 @media screen and (min-width:577px) and (max-width:991px) {
-    .navbar{
+    .navbar,.gamer-section{
         padding: 20px;
         align-items: center;
     }
@@ -186,12 +214,14 @@ margin-bottom: 24px;
         white-space: nowrap;
         
     }
-    .banner-section{
+    .banner-section,.gamer-section{
         flex-direction: column;
     }
     .banner-text{
         text-align: center;
         padding: 20px;
     }
-   
+   .gamer-img img{
+    width: 100%;
+   }
 }
