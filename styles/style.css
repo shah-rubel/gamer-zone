@@ -6,3 +6,82 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Work Sans', sans-serif;
 }
+.title{
+   
+
+font-size: 3rem;
+color: #0B0223;
+font-weight: 700;
+
+}
+.text{
+    color: #3C354F;
+
+
+font-size: 1.02rem;
+
+font-weight: 500;
+
+}
+.pink{
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/* nav */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 240px;
+   
+}
+.link-section>ul>li> a{
+    margin-right: 32px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+.logo-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-section h1{
+    margin-left: 20px;
+}
+.link-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.follow{
+    display: flex;
+   margin-left: 32px; 
+flex-shrink: 0;
+border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+padding: 17px 24px;
+}
+.follow p{
+    margin-left: 32px;
+    margin-right: 24px;
+}
+.follow>a{
+    margin-right: 16px;
+   
+}
+.fa-youtube{
+    color:red;
+}
+.fa-tiktok{
+    color: #3C354F;
+}
