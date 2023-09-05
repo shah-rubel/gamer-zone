@@ -288,6 +288,40 @@ line-height: 30px; /* 166.667% */
 .single-game p{
     margin-left: 16px;
 }
+.footer{
+    text-align: center;
+    padding: 130px 240px;
+    background: #0B0223;
+    color: white;
+}
+.footer a{
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 60px;
+}
+.footer-title{
+    color: #FFF;
+}
+.logo-section{
+    margin-bottom: 66px;
+}
+.useful-links{
+    margin:66px 0px;
+}
+.social-links{
+    margin-bottom: 66px;
+}
+.conditions{
+    margin-bottom: 28px;
+   
+}
+.conditions a{
+    color: #3C354F;
+}
+
+.copyright{
+    color: #3C354F;
+}
 
 /* hover effect */
 .single-game:hover{
@@ -295,6 +329,7 @@ line-height: 30px; /* 166.667% */
     border: 1.5px solid var(--Linear, #FF42A5);
 
 }
+
 /* Responsive screen  */
 
 @media screen and (max-width:576px) {
@@ -302,7 +337,7 @@ line-height: 30px; /* 166.667% */
     .navbar,.link-section,.navbar ul,.banner-section,.gamer-section,.online-games,.play-section,.career-section{
         flex-direction: column;
     }
-    .navbar,.gamer-section,.online-section,.play-section,.career-section{
+    .navbar,.gamer-section,.online-section,.play-section,.career-section,.footer{
         padding: 20px;
     }
     .link-section>ul>li> a,.follow{
@@ -336,6 +371,7 @@ line-height: 30px; /* 166.667% */
     }
     .game-type-section{
         display: grid;
+        width: 70%;
         grid-template-columns: repeat(3,1fr);
         column-gap: 5px;
         padding: 10px;
@@ -351,13 +387,25 @@ line-height: 30px; /* 166.667% */
     .single-game img{
         width: 25%;
     }
-        
 
+    .useful-links,.social-links{
+        white-space: nowrap;
+        display: grid;
+        row-gap: 20px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .conditions{
+
+        white-space: nowrap;
+        display: grid;
+        row-gap: 20px;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 /* tablet responsive */
 @media screen and (min-width:577px) and (max-width:991px) {
-    .navbar,.gamer-section{
+    .navbar,.gamer-section,.footer{
         padding: 20px;
         align-items: center;
     }
@@ -382,6 +430,23 @@ line-height: 30px; /* 166.667% */
    .gamer-img img{
     width: 100%;
    }
+   .game-type-section{
+    white-space: nowrap;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+   }
+
+   .footer img{
+    width: 10%;
+   }
+   .useful-links,.social-links,.conditions{
+    white-space: nowrap;
+    display: grid;
+    row-gap: 20px;
+    padding: 0 10px;
+    grid-template-columns: repeat(6,1fr);
+}
    .online-section{
     display: flex;
     flex-direction: column;
